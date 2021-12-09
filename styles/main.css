@@ -525,7 +525,66 @@ background-color: #F37335;
     margin-top: 0;
 }
 
+/* Modal */
+
+.burger {
+    width: 34px;
+    height: 22px;
+    border-color: transparent;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+#modal {
+    max-width: 500px;
+    background-color: cornsilk;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    transition: 0.5s;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+#modal .header-nav {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.burger-close {
+    width: 22px;
+    height: 22px;
+    border-color: transparent;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 /* Responsive */
+
+@media (min-width: 1001px) {
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+}
+@media (min-width: 766px) {
+    .header-burger {
+        display: none;
+    }
+}
 
 @media (max-width: 1000px) {
     .container {
@@ -553,14 +612,70 @@ background-color: #F37335;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
     }
-
-
-    .footer {
-        display: flex;
-        gap: 86px;
+    .menu-other {
+        overflow: hidden;
+        height: 558px;
     }
+    .menu-other .menu-grid {
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 281px;
+    }
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img {
+        height: 320px;
+    }
+    .footer-tel {
+        display: none;
+    }
+    .footer-list + .footer-list-tel {
+        display: block;
+    }
+}
 
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
+    .header {
+        gap: 21px;
+    }
+}
 
+@media (max-width: 567px) {
+    .breadcrumbs {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .desription {
+        font-size: 12px;
+    }
+    .bg {
+        padding: 55px 0;
+    }
+    .banner-box {
+        background-position: 17% center;
+        padding: 35px 25px 54px;
+    }
+}
 
+@media (max-width: 360px) {
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+}
 
+@media (max-width: 320px) {
+    .banner-box {
+        background-position: 25% center;
+    }
 }
