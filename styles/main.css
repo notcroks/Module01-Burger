@@ -656,9 +656,9 @@ background-color: #F37335;
 @media (max-width: 680px) {
     .footer-box {
         display: grid;
-        grid-template-areas: 'a d d'
-                             'b b b'
-                             'c c c';
+        grid-template-areas: 'a d'
+                             'b b'
+                             'c c';
         gap: 21px 0;
     }
     .footer-tel {
@@ -748,9 +748,9 @@ background-color: #F37335;
     }
     .footer-box {
         display: grid;
-        grid-template-areas: 'a d d d'
-                             'b b b b'
-                             'c c c c';
+        grid-template-areas: 'a d'
+                             'b b'
+                             'c c';
         gap: 21px 0;
     }
 }}
