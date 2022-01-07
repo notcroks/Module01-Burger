@@ -764,8 +764,10 @@ background-color: #F37335;
         grid-area: a;
     }.footer-item:nth-child(2) {
         grid-area: b;
+        margin-top: 24px;
     }.footer-item:nth-child(3) {
         grid-area: c;
+        margin-top: 22px;
     }.footer-item:nth-child(4) {
         grid-area: d;
     }
